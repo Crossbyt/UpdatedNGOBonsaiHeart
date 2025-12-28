@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Bonsai Hearts Foundation – Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;600;700&family=Nunito:wght@300;400;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Styles -->
+   <link rel="stylesheet" href="style.css" /> 
+  <link rel="stylesheet" href="blogstyle.css" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+<header id="site-header">
+  <div class="container">
+    <div class="header-inner">
+
+      <!-- LOGO -->
+      <div class="logo">
+        <a href="/index.html">
+        <img src="Assets/logo-icon.png" class="logo-circle" /></a>
+        <div>
+          <span class="logo-text">Bonsai Hearts Foundation</span>
+          <span class="logo-sub">Here we grow hope where fear once lived.</span>
+        </div>
+      </div>
+
+      <!-- MOBILE HAMBURGER -->
+      <div class="nav-toggle" id="navToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- NAVIGATION PANEL -->
+      <nav id="mainNav">
+        <div class="nav-links">
+          <a href="index.html#hero">Home</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#programs">Programs</a>
+          <a href="index.html#team">Team</a>
+          <a href="blog.html" class="active">Blog</a>
+          <a href="index.html#stories">Stories</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+      </nav>
+
+    </div>
+  </div>
+</header>
+
+
+  <!-- BLOG ARCHIVE MAIN -->
+  <main class="main">
+    <section class="blog-archive">
+      <div class="container">
+
+        <!-- Page Title -->
+        <div class="section-header">
+          <h6>Blog</h6>
+          <h2>Stories, guidance and heartfelt reminders.</h2>
+          <p>Explore all categories or open any post to read the full story.</p>
+        </div>
+
+        <!-- MOBILE FILTERS -->
+    <div class="blog-filters-scroll mobile-only">
+  <button class="filter-btn active" data-category="all">All Posts</button>
+  <button class="filter-btn" data-category="guide">Guide for Parents</button>
+  <button class="filter-btn" data-category="mental">Mental Healthcare Tips</button>
+  <button class="filter-btn" data-category="volunteer">Volunteer Stories</button>
+  <button class="filter-btn" data-category="care">Daily Care</button>
+  <button class="filter-btn" data-category="community">Community</button>
+  <button class="filter-btn" data-category="expert">Expert Q&A</button>
+    </div>
+
+        <div class="blog-layout">
+
+          <!-- FILTER SIDEBAR -->
+          <aside class="blog-filters desktop-only">
+            <button class="filter-btn active" data-category="all">All Posts</button>
+            <button class="filter-btn" data-category="guide">Guide for Parents</button>
+            <button class="filter-btn" data-category="mental">Mental Healthcare</button>
+            <button class="filter-btn" data-category="volunteer">Volunteer Stories</button>
+            <button class="filter-btn" data-category="care">Daily Care</button>
+            <button class="filter-btn" data-category="community">Community</button>
+            <button class="filter-btn" data-category="expert">Expert Q&A</button>
+          </aside>
+
+          <!-- BLOG GRID -->
+          <div class="blog-grid" id="blogGrid"></div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL -->
+  <div class="modal" id="blogModal">
+    <div class="modal-backdrop"></div>
+
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+
+      <div class="modal-meta" id="modalMeta"></div>
+      <h3 id="modalTitle"></h3>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="blog.js"></script>
+
+</body>
+
+</html>

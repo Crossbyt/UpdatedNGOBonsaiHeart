@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonsai Heart Foundation – Join Our Mission</title>
+    <style>
+        * {
+            margin: 0; padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Section */
+        header {
+            background: url('Assets/SmileConnect.jpg')
+                no-repeat center center/cover fixed;
+            height: 100vh;
+            display: flex; 
+            align-items: center; 
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            color: white;
+            position: relative;
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.45);
+        }
+
+        header .content {
+            position: relative;
+            z-index: 2;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.3rem;
+            max-width: 650px;
+            margin: 15px auto;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #0c8346;
+            padding: 12px 28px;
+            color: white;
+            border-radius: 25px;
+            margin-top: 20px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #0a6a3a;
+        }
+
+        /* Sections */
+        section {
+            padding: 70px 10%;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2.3rem;
+            margin-bottom: 20px;
+            /* color: #0c8346; */
+        }
+
+        .mission-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+        }
+
+        .impact {
+            background: #0c8346;
+            color: white;
+        }
+
+        .impact-stats {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 50px;
+            margin-top: 40px;
+        }
+
+        .stat {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        footer {
+            background: #222;
+            padding: 20px;
+            color: #bbb;
+            text-align: center;
+        }
+
+        footer a {
+            color: #0c8346;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="content">
+            <h1>Join Our Mission</h1>
+            <p>Together, let’s grow hope, empower families, and transform lives at the Bonsai Heart Foundation.</p>
+            <a href="#join" class="btn">Get Involved</a>
+        </div>
+    </header>
+
+    <!-- Our Mission -->
+    <section id="mission">
+        <h2>Why We Exist</h2>
+        <p>We work to support underprivileged children and families with medical care, education, food security, and emotional support.</p>
+
+        <div class="mission-cards">
+            <div class="card">❤️ Medical Support & Emergency Aid</div>
+            <div class="card">📚 Education Assistance & Scholarships</div>
+            <div class="card">🍲 Food Security & Nutrition Programs</div>
+            <div class="card">🌿 Mental Wellness & Community Care</div>
+        </div>
+    </section>
+
+    <!-- Impact -->
+    <section class="impact">
+        <h2>Our Impact</h2>
+        <div class="impact-stats">
+            <div>
+                <div class="stat" id="stat1">0</div>
+                <p>Lives Supported</p>
+            </div>
+            <div>
+                <div class="stat" id="stat2">0</div>
+                <p>Awareness events</p>
+            </div>
+            <div>
+                <div class="stat" id="stat3">0</div>
+                <p>Medical partners</p>
+            </div>
+            <div>
+                <div class="stat" id="stat4">0</div>
+                <p>Volunteers</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Section -->
+    <section id="join">
+        <h2>Become a Bonsai Heart Champion</h2>
+        <p>Your support helps us save lives, empower children, and build resilient communities.</p>
+
+        <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdCmC5xqNjyXZBci8yaVh1QMUk09g9BCGIFzFgNcMPAS_v3GQ/viewform?usp=publish-editor">Join Us</a>
+        <!-- <a class="btn" style="background:#333; margin-left:10px;" href="#">Volunteer</a> -->
+    </section>
+
+    <footer>
+        © 2025 Bonsai Heart Foundation • All Rights Reserved  
+        <!-- <br>Website by <a href="#">Your Name</a> -->
+    </footer>
+
+<script>
+    // Simple Animated Counter
+    function animateCounter(id, target) {
+        let value = 0;
+        let interval = setInterval(() => {
+            value += Math.ceil(target / 100);
+            if (value >= target) {
+                value = target;
+                clearInterval(interval);
+            }
+            document.getElementById(id).innerText = value;
+        }, 30);
+    }
+
+    window.onload = () => {
+        animateCounter("stat1", 527);
+        animateCounter("stat2", 18);
+        animateCounter("stat3", 6);
+        animateCounter("stat4", 24);
+    };
+</script>
+
+</body>
+</html>

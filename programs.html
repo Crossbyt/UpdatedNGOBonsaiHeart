@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Our Programs | Bonsai Hearts Foundation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="programs.css" />
+</head>
+
+<body>
+
+<!-- PAGE HEADER -->
+<section class="programs-hero">
+  <h1>Our Programs</h1>
+  <p>
+    Thoughtfully designed initiatives that support children with heart conditions
+    and the families who care for them—emotionally, medically and socially.
+  </p>
+</section>
+
+<!-- PROGRAM CARDS -->
+<section class="programs-grid">
+
+  <!-- Parent Health Circle -->
+  <div class="program-card open-program"
+       data-program="parent">
+    <span class="icon">🌿</span>
+    <h3>Parent Health Circle</h3>
+    <p>
+      A safe emotional support circle helping parents overcome fear, confusion
+      and emotional barriers while caring for a child with a heart condition.
+    </p>
+    <span class="learn">Learn more →</span>
+  </div>
+
+  <!-- Community Heartlines -->
+  <div class="program-card open-program"
+       data-program="community">
+    <span class="icon">❤️</span>
+    <h3>Community Heartlines</h3>
+    <p>
+      A community-driven network guiding families toward accurate, timely CHD
+      diagnosis and trusted support.
+    </p>
+    <span class="learn">Learn more →</span>
+  </div>
+
+  <!-- Bridge Program -->
+  <div class="program-card open-program"
+       data-program="bridge">
+    <span class="icon">🌉</span>
+    <h3>Bridge Program</h3>
+    <p>
+      Trained Bridge Fellows act as the human link between busy specialists
+      and anxious families.
+    </p>
+    <span class="learn">Learn more →</span>
+  </div>
+
+</section>
+
+<!-- MODAL -->
+<div class="program-modal" id="programModal">
+  <div class="modal-overlay"></div>
+
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<script src="programs.js"></script>
+</body>
+</html>
